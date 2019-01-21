@@ -1,1 +1,76 @@
+/* Program #1 - A first C++ Program.
 
+Enter this program, then compile and run it.
+*/
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+// main() is where the programs execution begins.
+int main()
+{
+    cout << "This is my first C++ Program."; 
+	return 0;
+}
+
+
+// Program #2 - Using a variable
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x; // this declares a variable
+
+	x = 1023; // this assigns 1023 to x
+
+	cout << "This program prints the value of x: ";
+	cout << x; // this displays x, which will be shown as 1023
+
+	return 0;
+}
+
+
+// Program #3 - Converts Gallons to liters
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int gallons, liters;
+
+	cout << "Enter number of Gallons: ";
+	cin >> gallons; // this inputs from the user
+
+	liters = gallons * 4; // converts user input to liters
+
+	cout << "Liters: " << liters; // Displays converted value
+	
+	return 0;
+}
+
+
+
+// Program #4 - Converts Gallons to liters using FLoating point numbers
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double gallons, liters;
+	cout << "Enter number of gallons: ";
+	cin >> gallons; // takes user input
+
+	liters = gallons * 3.7854; //converts to liters
+
+	cout << "Liters: " << liters;
+
+	return 0;
+}
