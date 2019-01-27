@@ -7,18 +7,21 @@ using namespace std;
 int main()
 {
 	int n;
-
-	cout << "Please enter a number value: ";
+	cout << "Please enter a number value: ";	
 	cin >> n;
 
-	for (n; n >= 0; n *= n) {
-		if (n == 0)
+	while (n >= 0) 
+	{
+		if (n == 0) 
+		{
 			break;
-		else {
-			cout << "The value you entered is " << n;
-			cout << "It's square is " << n * n << ". \n";
 		}			
+		else if (n > 0)
+		{
+			cout << "The value you entered is " << n << endl;
+			cout << "It's square is " << n * n << endl;		
+			break;
+		}
 	}	
 	return 0;
 }
-
