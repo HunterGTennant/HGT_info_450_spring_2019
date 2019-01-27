@@ -1,0 +1,24 @@
+// practice1.cpp accepts positive values from the user, squares it and returns it to be displayed. when "0" is entered the program will stop. 
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+
+	cout << "Please enter a number value: ";
+	cin >> n;
+
+	for (n; n >= 0; n *= n) {
+		if (n == 0)
+			break;
+		else {
+			cout << "The value you entered is " << n;
+			cout << "It's square is " << n * n << ". \n";
+		}			
+	}	
+	return 0;
+}
+
