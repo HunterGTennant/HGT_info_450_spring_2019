@@ -54,3 +54,36 @@ int main()
 	else
 		cout << "\n" << num << " is prime.";
 }
+
+// practice3.cpp : Writes a program that continually accepts a year value from the user and determines if it is a leap year
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int year;
+
+	cout << "Enter a year: ";
+	cin >> year;
+
+	while (year >= 0) 
+	{
+		if (year % 4 == 0)
+		{
+			if (year % 100 == 0)
+			{
+				if (year % 400 == 0)
+					cout << year << " is a leap year.";
+				else
+					cout << year << " is not a leap year.";
+			}
+			else
+				cout << year << " is a leap year.";
+		}
+		else
+			cout << year << " is not a leap year.";
+	}
+	return 0;
+}
