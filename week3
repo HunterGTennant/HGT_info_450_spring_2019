@@ -1,1 +1,65 @@
+// assignment1.cpp : this program takes the user input for the radius of a circle and calculates the circumference
 
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+#define PI 3.141
+double calculateCircumference(double &radius, double &circumference);
+
+int main()
+{
+	double circumference, radius;
+	cout << "Please enter the radius of you circle: ";
+	cin >> radius; 
+	circumference = calculateCircumference(radius,circumference);
+	cout << "The Circumference of your circle is " << circumference << endl;
+	
+	return 0;
+}
+
+double calculateCircumference(double &radius, double &circumference)
+{
+	circumference = 2 * PI * radius;
+	return circumference;
+}
+
+
+// assignment2.cpp : This file will operate how it should with the addition of the functions(2) added at the bottom
+
+#include "pch.h"
+#include <iostream>
+#include <ctype.h>
+using namespace std;
+
+char get_user_input();
+void to_upper_case(char &letter);
+
+int main() {
+	char user_input_letter;
+	cout << "Type in a letter grade, lowercase or uppercase." << endl;
+	if ('0' != (user_input_letter = get_user_input())) {
+		to_upper_case(user_input_letter);
+		switch (user_input_letter) {
+		case 'A': cout << "Super Great job on an A!" << endl; break;
+		case 'B': cout << "Great job on a B!" << endl; break;
+		case 'C': cout << "Good job on a C!" << endl; break;
+		case 'D': cout << "Keep at it, you can get there." << endl; break;
+		case 'F': cout << "F is for #fail" << endl; break;
+		default: cout << "This is not a valid grade: " << user_input_letter << endl;
+		}
+	}
+	cout << "You have entered 0.  Exiting." << endl;
+}
+char  get_user_input() {
+	char input;
+	cin >> input;
+	return input;
+}
+
+void to_upper_case(char &letter) {
+	if (get_user_input() != 0) {
+		char toupper(get_user_input());
+	}
+	return;
+}
