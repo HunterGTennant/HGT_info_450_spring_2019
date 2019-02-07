@@ -52,14 +52,11 @@ int main() {
 	cout << "You have entered 0.  Exiting." << endl;
 }
 char  get_user_input() {
-	char input;
+	char input = ' ';
 	cin >> input;
 	return input;
 }
 
 void to_upper_case(char &letter) {
-	if (get_user_input() != 0) {
-		char toupper(get_user_input());
-	}
-	return;
+	letter = toupper(letter);
 }
